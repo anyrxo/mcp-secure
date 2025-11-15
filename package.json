@@ -1,0 +1,62 @@
+{
+  "name": "mcp-secure",
+  "version": "1.0.0",
+  "description": "Security scanner and linter for Model Context Protocol servers - find vulnerabilities, enforce best practices",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "mcp-secure": "./dist/cli.js",
+    "mcps": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepare": "npm run build",
+    "start": "node dist/cli.js",
+    "test": "node test-suite.js",
+    "lint": "eslint src/**/*.ts"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "security",
+    "scanner",
+    "linter",
+    "vulnerabilities",
+    "best-practices",
+    "audit",
+    "safety",
+    "cli"
+  ],
+  "author": "MCP Secure Contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/mcp-secure.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/mcp-secure/issues"
+  },
+  "homepage": "https://github.com/yourusername/mcp-secure#readme",
+  "dependencies": {
+    "acorn": "^8.15.0",
+    "acorn-walk": "^8.3.4",
+    "chalk": "^5.6.2",
+    "cli-table3": "^0.6.5",
+    "commander": "^12.1.0",
+    "glob": "^10.4.5",
+    "ora": "^8.2.0",
+    "semver": "^7.7.3",
+    "yaml": "^2.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.1",
+    "@typescript-eslint/eslint-plugin": "^8.18.2",
+    "@typescript-eslint/parser": "^8.18.2",
+    "eslint": "^9.17.0",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
